@@ -142,6 +142,118 @@ npm start  # or bun start
 | Mistral | Mistral Large, Medium | ✅ Active |
 | Cohere | Command R+ | ✅ Active |
 
+#### 🖥️ Terminal UI Preview
+
+```
+╔══════════════════════════════════════════════════════════════╗
+║  🤖 AIGENEV7 — Local AI Coding Agent                        ║
+║  Provider: DeepSeek Coder | Model: deepseek-coder          ║
+╠══════════════════════════════════════════════════════════════╣
+║                                                              ║
+║  > What does this function do?                               ║
+║                                                              ║
+║  ┌──────────────────────────────────────────────────────────┐ ║
+║  │ This function parses command-line arguments and returns  │ ║
+║  │ a structured config object. It supports:                 │ ║
+║  │ • --provider/-p: Select AI provider                     │ ║
+║  │ • --model/-m: Specify model name                        │ ║
+║  │ • --config/-c: Path to config file                      │ ║
+║  └──────────────────────────────────────────────────────────┘ ║
+║                                                              ║
+║  [File: src/core/parser.ts:42-78]                            ║
+╚══════════════════════════════════════════════════════════════╝
+```
+
+#### 📊 Comparison: AIGENEV7 vs Other AI Coding Agents
+
+| Feature | AIGENEV7 | Cursor | GitHub Copilot | Aider |
+|---------|----------|--------|----------------|-------|
+| **Price** | 🆓 Free | 💰 $20/mo | 💰 $10/mo | 🆓 Free |
+| **Local-First** | ✅ Yes | ❌ Cloud | ❌ Cloud | ✅ Yes |
+| **Multi-Provider** | ✅ 10+ | ❌ Limited | ❌ OpenAI | ✅ Multiple |
+| **Uncensored** | ✅ Yes | ❌ No | ❌ No | ⚠️ Depends |
+| **Terminal UI** | ✅ Yes | ❌ IDE | ❌ IDE | ✅ Yes |
+| **Token Limits** | ♾️ Unlimited | ⚠️ Limited | ⚠️ Limited | ♾️ Unlimited |
+| **Privacy** | 🔒 100% Local | ⚠️ Cloud | ⚠️ Cloud | 🔒 Local |
+| **Offline Mode** | ✅ Yes | ❌ No | ❌ No | ✅ Yes |
+| **Custom Models** | ✅ Yes | ❌ No | ❌ No | ✅ Yes |
+| **Open Source** | ✅ Yes | ❌ No | ❌ No | ✅ Yes |
+
+#### 🗺️ Roadmap
+
+| Phase | Milestone | Status |
+|-------|-----------|--------|
+| Phase 1 | Core engine + CLI interface | ✅ Complete |
+| Phase 2 | Multi-provider support (10+) | ✅ Complete |
+| Phase 3 | Terminal UI with syntax highlighting | ✅ Complete |
+| Phase 4 | Project-aware context system | 🔄 In Progress |
+| Phase 5 | Plugin/extension system | 📋 Planned |
+| Phase 6 | VS Code extension | 📋 Planned |
+| Phase 7 | Collaborative mode (multi-user) | 📋 Planned |
+| Phase 8 | Custom fine-tuned models | 📋 Planned |
+
+#### 🏛️ Technical Architecture
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                        AIGENEV7 Architecture                     │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                  │
+│  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐       │
+│  │  Terminal UI  │◄──►│  Command     │◄──►│  Core Engine │       │
+│  │  (Ink/React)  │    │  Parser      │    │  (TypeScript)│       │
+│  └──────────────┘    └──────────────┘    └──────┬───────┘       │
+│                                                  │               │
+│                                    ┌─────────────┼─────────────┐ │
+│                                    ▼             ▼             ▼ │
+│                            ┌──────────────┐ ┌──────────────┐    │
+│                            │  Provider    │ │  Context     │    │
+│                            │  Manager     │ │  Manager     │    │
+│                            └──────┬───────┘ └──────────────┘    │
+│                                   │                              │
+│         ┌─────────────────────────┼─────────────────────────┐    │
+│         ▼           ▼           ▼           ▼           ▼    │    │
+│    ┌────────┐  ┌────────┐  ┌────────┐  ┌────────┐  ┌────────┐ │
+│    │DeepSeek│  │OpenAI  │  │Anthropic│ │Ollama  │  │Custom  │ │
+│    │Provider│  │Provider│  │Provider│  │Provider│  │Provider│ │
+│    └────────┘  └────────┘  └────────┘  └────────┘  └────────┘ │
+│                                                                  │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+#### 🔌 API Design
+
+```typescript
+// Provider Interface
+interface AIProvider {
+  name: string;
+  models: Model[];
+  generate(prompt: string, options?: GenerateOptions): Promise<Response>;
+  stream(prompt: string, options?: GenerateOptions): AsyncGenerator<Chunk>;
+}
+
+// Configuration
+interface Config {
+  provider: string;
+  model: string;
+  apiKey?: string;
+  endpoint?: string;
+  maxTokens?: number;
+  temperature?: number;
+}
+
+// Usage Example
+const agent = new AIGENEV7({
+  provider: 'deepseek',
+  model: 'deepseek-coder'
+});
+
+const response = await agent.generate('Explain this code', {
+  context: await readFile('src/main.ts'),
+  maxTokens: 2048
+});
+```
+
 ---
 
 ## 🛠️ Tech Stack
