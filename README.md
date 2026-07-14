@@ -168,29 +168,31 @@ npm start  # or bun start
 
 | Feature | AIGENEV7 | Cursor | GitHub Copilot | Aider |
 |---------|----------|--------|----------------|-------|
-| **Price** | 🆓 Free | 💰 $20/mo | 💰 $10/mo | 🆓 Free |
-| **Local-First** | ✅ Yes | ❌ Cloud | ❌ Cloud | ✅ Yes |
-| **Multi-Provider** | ✅ 10+ | ❌ Limited | ❌ OpenAI | ✅ Multiple |
-| **Uncensored** | ✅ Yes | ❌ No | ❌ No | ⚠️ Depends |
-| **Terminal UI** | ✅ Yes | ❌ IDE | ❌ IDE | ✅ Yes |
-| **Token Limits** | ♾️ Unlimited | ⚠️ Limited | ⚠️ Limited | ♾️ Unlimited |
-| **Privacy** | 🔒 100% Local | ⚠️ Cloud | ⚠️ Cloud | 🔒 Local |
-| **Offline Mode** | ✅ Yes | ❌ No | ❌ No | ✅ Yes |
-| **Custom Models** | ✅ Yes | ❌ No | ❌ No | ✅ Yes |
-| **Open Source** | ✅ Yes | ❌ No | ❌ No | ✅ Yes |
+#### 📊 Comparison: Local AI Coding Agents
+
+| Feature | AIGENEV7 | Aider | Continue.dev |
+|---------|----------|-------|--------------|
+| **Price** | 🆓 Free | 🆓 Free | 🆓 Free |
+| **Local-First** | ✅ Yes | ✅ Yes | ✅ Yes |
+| **Multi-Provider** | ✅ 10+ | ✅ Multiple | ✅ Multiple |
+| **Terminal UI** | ✅ Yes | ✅ Yes | ❌ IDE |
+| **Token Limits** | ♾️ Unlimited | ♾️ Unlimited | ⚠️ Varies |
+| **Privacy** | 🔒 100% Local | 🔒 Local | 🔒 Local |
+| **Offline Mode** | ✅ Yes | ✅ Yes | ✅ Yes |
+| **Open Source** | ✅ Yes | ✅ Yes | ✅ Yes |
 
 #### 🗺️ Roadmap
 
 | Phase | Milestone | Status |
 |-------|-----------|--------|
-| Phase 1 | Core engine + CLI interface | ✅ Complete |
-| Phase 2 | Multi-provider support (10+) | ✅ Complete |
-| Phase 3 | Terminal UI with syntax highlighting | ✅ Complete |
-| Phase 4 | Project-aware context system | 🔄 In Progress |
+| Phase 1 | Core engine + CLI interface | 🎯 Vision |
+| Phase 2 | Multi-provider support (10+) | 🎯 Vision |
+| Phase 3 | Terminal UI with syntax highlighting | 🎯 Vision |
+| Phase 4 | Project-aware context system | 🎯 Vision |
 | Phase 5 | Plugin/extension system | 📋 Planned |
 | Phase 6 | VS Code extension | 📋 Planned |
 | Phase 7 | Collaborative mode (multi-user) | 📋 Planned |
-| Phase 8 | Custom fine-tuned models | 📋 Planned |
+| Phase 8 | Custom fine-tuned models | 📋 Future |
 
 #### 🏛️ Technical Architecture
 
