@@ -76,7 +76,7 @@ https://github.com/constanza8999/EyeOfGod_ISO_V2
 **Local-First AI Coding Agent — Free Forever**
 
 [![GitHub](https://img.shields.io/badge/Repository-181717?style=flat-square&logo=github)](https://github.com/constanza8999/AIGENEV7)
-[![Release](https://img.shields.io/badge/Release-Latest-blue?style=flat-square)](https://github.com/constanza8999/AIGENEV7/releases)
+[![Status](https://img.shields.io/badge/Status-Coming%20Soon-orange?style=flat-square)](#)
 
 </div>
 
