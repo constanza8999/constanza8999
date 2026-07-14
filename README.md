@@ -80,17 +80,67 @@ https://github.com/constanza8999/EyeOfGod_ISO_V2
 
 </div>
 
-A 100% local AI coding agent with no token limits, no rate limits, no subscriptions. Supports 10+ AI providers including DeepSeek, OpenAI, Anthropic, and more.
+A **100% local, uncensored AI coding agent** with no token limits, no rate limits, no subscriptions. Built for developers who want full control over their AI workflow without cloud dependencies.
 
 #### ✨ Key Features
 
 | Feature | Description |
 |---------|-------------|
-| 🆓 **Free Forever** | No token limits, no rate limits, no subscriptions |
-| 🔌 **10+ Providers** | DeepSeek, OpenAI, Anthropic, Google, local models |
-| 💻 **Terminal UI** | Interactive command-line interface |
-| 🔒 **Local-First** | Your code stays on your machine |
-| 🚀 **High Performance** | Optimized for speed and efficiency |
+| 🆓 **Free Forever** | No token limits, no rate limits, no subscriptions — ever |
+| 🔌 **10+ Providers** | DeepSeek, OpenAI, Anthropic, Google Gemini, Ollama, LM Studio, and more |
+| 💻 **Terminal UI** | Beautiful interactive command-line interface with syntax highlighting |
+| 🔒 **Local-First** | Your code never leaves your machine — zero cloud dependency |
+| 🧠 **Multi-Model** | Switch between providers on the fly for different tasks |
+| 🛠️ **Code Generation** | Full file creation, editing, and refactoring capabilities |
+| 📁 **Project Awareness** | Understands your entire codebase for context-aware suggestions |
+| 🔄 **Unlimited Usage** | No artificial limits — use as much as you need |
+| 🎨 **Cyberpunk Theme** | Dark, sleek terminal aesthetic designed for long coding sessions |
+| 📦 **Cross-Platform** | Works on Windows, macOS, and Linux |
+
+#### 🏗️ Architecture
+
+```
+AIGENEV7/
+├── src/
+│   ├── core/          # Core engine & provider management
+│   ├── providers/     # AI provider integrations
+│   ├── commands/      # CLI command handlers
+│   └── ui/            # Terminal UI components
+├── config/            # Configuration files
+└── tests/             # Test suite
+```
+
+#### 🚀 Quick Start
+
+```bash
+# Clone the repository
+git clone https://github.com/constanza8999/AIGENEV7.git
+cd AIGENEV7
+
+# Install dependencies
+npm install  # or bun install
+
+# Configure your API key(s)
+cp config/config.example.json config/config.json
+
+# Run AIGENEV7
+npm start  # or bun start
+```
+
+#### 🔧 Supported Providers
+
+| Provider | Models | Status |
+|----------|--------|--------|
+| DeepSeek | Coder, Chat, V3 | ✅ Active |
+| OpenAI | GPT-4o, GPT-4, GPT-3.5 | ✅ Active |
+| Anthropic | Claude 3.5 Sonnet, Claude 3 Opus | ✅ Active |
+| Google | Gemini 1.5 Pro, Gemini Flash | ✅ Active |
+| Ollama | Llama 3, CodeLlama, Mistral | ✅ Active |
+| LM Studio | Any local model | ✅ Active |
+| Groq | Mixtral, Llama 3 | ✅ Active |
+| Together AI | Various open models | ✅ Active |
+| Mistral | Mistral Large, Medium | ✅ Active |
+| Cohere | Command R+ | ✅ Active |
 
 ---
 
